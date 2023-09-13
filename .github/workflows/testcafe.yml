@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: lts/*
+      - run: node -v  
       - uses: actions/checkout@v1
       - name: Run TestCafe Tests
         uses: DevExpress/testcafe-action@latest
