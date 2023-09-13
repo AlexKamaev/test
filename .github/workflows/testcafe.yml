@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: lts/*
+          node-version: "lts/*"
       - run: node -v  
       - uses: actions/checkout@v1
       - name: Run TestCafe Tests
