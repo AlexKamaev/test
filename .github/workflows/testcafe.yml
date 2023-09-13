@@ -7,6 +7,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/setup-node@v1
+      - run: node -v 
       - uses: actions/checkout@v1
       - name: Run TestCafe Tests
         uses: DevExpress/testcafe-action@latest
